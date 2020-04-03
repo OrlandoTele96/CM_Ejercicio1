@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Tu signo zodiacal</string>
+    <string name="FirstTitle">Type your data</string>
+    <string name="FirstName">First Name</string>
+    <string name="Fnameex">Ex. Jose Juan</string>
+    <string name="LastName">Last Name</string>
+    <string name="LastName1">Ex. Perez</string>
+    <string name="LastName2">Ex. Godinez</string>
+    <string name="SendButton">Send</string>
+    <string name="BirthDay">Select your birthday</string>
+    <string name="MainActivity">MainActivity</string>
+    <string name="date_error">Invalid date</string>
+    <string name="incorrectData">Re-type your data correctly</string>
+    <string name="incomplete">Information is not complete</string>
+    <string name="user">User</string>
+    <string name="greeting">greeting</string>
+    <string name="greeting_user">Hello!</string>
+    <string name="correct">Information correct... sending!</string>
+</resources>

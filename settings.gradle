@@ -1,0 +1,2 @@
+rootProject.name='signo zodiacal'
+include ':app'
