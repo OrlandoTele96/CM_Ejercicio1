@@ -126,33 +126,31 @@ public class MainActivity extends AppCompatActivity implements DatePickerDialog.
     @Override
     protected void onPause() {
         super.onPause();
-        //pause music
-        //save data
+
     }
 
     @Override
     protected void onRestart() {
         super.onRestart();
-        //music start
-        //set fields again
+
     }
 
     @Override
     protected void onStop() {
         super.onStop();
-        //save data
+
     }
 
     @Override
     protected void onDestroy() {
         super.onDestroy();
-        //clear all
+
     }
 
     @Override
     protected void onResume() {
         super.onResume();
-        //resume
+
     }
 
     @Override
