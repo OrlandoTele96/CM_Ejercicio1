@@ -1,6 +1,5 @@
 <resources>
-    <string name="app_name">Tu signo zodiacal</string>
-    <string name="FirstTitle">Type your data</string>
+    <string name="app_name">Your sign zodiacal</string>
     <string name="FirstName">First Name</string>
     <string name="Fnameex">Ex. Jose Juan</string>
     <string name="LastName">Last Name</string>
@@ -8,12 +7,74 @@
     <string name="LastName2">Ex. Godinez</string>
     <string name="SendButton">Send</string>
     <string name="BirthDay">Select your birthday</string>
-    <string name="MainActivity">MainActivity</string>
+    <string name="MainActivity" translatable="false">MainActivity</string>
     <string name="date_error">Invalid date</string>
     <string name="incorrectData">Re-type your data correctly</string>
     <string name="incomplete">Information is not complete</string>
-    <string name="user">User</string>
-    <string name="greeting">greeting</string>
+    <string name="user" translatable="false">User</string>
+    <string name="greeting" translatable="false">greeting</string>
     <string name="greeting_user">Hello!</string>
-    <string name="correct">Information correct... sending!</string>
+    <string name="correct">Information correct...</string>
+    <string name="MA_user_info" translatable="false">MainActivity_user_info</string>
+    <string name="UserInf">Information sent successfully</string>
+    <string name="name">Name :  </string>
+    <string name="your_bd">Your BirthDay : </string>
+    <string name="user_age">Your age : </string>
+    <string name="years"> years old</string>
+    <string name="rfc">Your RFC is :</string>
+    <string name="zodiac_s">Your zodiac sign is :</string>
+    <string name="s_horoscope_chin">Your chinese horoscope sign is : </string>
+    <string name="bar" translatable="false">/</string>
+    <string name="aries">Aries</string>
+    <string name="taurus">Taurus</string>
+    <string name="virgo">Virgo</string>
+    <string name="sagittarius">Sagittarius</string>
+    <string name="pisces">Pisces</string>
+    <string name="libra">Libra</string>
+    <string name="leo">Leo</string>
+    <string name="gemini">Gemini</string>
+    <string name="scorpio">Scorpio</string>
+    <string name="capricorn">Capricorn</string>
+    <string name="cancer">Cancer</string>
+    <string name="aquiarius">Aquiarius</string>
+    <string name="monkey">Monkey</string>
+    <string name="rooster">Rooster</string>
+    <string name="dog">Dog</string>
+    <string name="pig">Pig</string>
+    <string name="rat">Rat</string>
+    <string name="ox">Ox</string>
+    <string name="tigger">Tigger</string>
+    <string name="rabbit">Rabbit</string>
+    <string name="dragon">Dragon</string>
+    <string name="snake">Snake</string>
+    <string name="goat">Goat</string>
+    <string name="horse">Horse</string>
+    <string name="info">Press an image to get a description of your sign</string>
+    <string name="userinstruction">Type your data</string>
+    <string name="characteristic">Your characteristic is : </string>
+    <string name="ariesv">Courage</string>
+    <string name="taurusv">Patience</string>
+    <string name="virgov">Modesty</string>
+    <string name="sagittariusv">Honest</string>
+    <string name="piscesv">Friendly</string>
+    <string name="librav">Diplomatic</string>
+    <string name="leov">Goodness</string>
+    <string name="geminiv">Intelligence</string>
+    <string name="scorpiov">Decided</string>
+    <string name="capricornv">Disciplined</string>
+    <string name="cancerv">Affecionate</string>
+    <string name="aquiariusv">Loyalty</string>
+    <string name="monkeyv">Dangerous</string>
+    <string name="roosterv">Traveler</string>
+    <string name="dogv">Honest</string>
+    <string name="pigv">Fertility</string>
+    <string name="ratv">Aggressiveness</string>
+    <string name="oxv">Stubborn</string>
+    <string name="tiggerv">Courage</string>
+    <string name="rabbitv">Prudence</string>
+    <string name="dragonv">Wisdom</string>
+    <string name="snakev">Intelligence</string>
+    <string name="goatv">Creative</string>
+    <string name="horsev">Popular</string>
+
 </resources>

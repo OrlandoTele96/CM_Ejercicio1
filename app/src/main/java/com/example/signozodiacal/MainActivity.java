@@ -4,8 +4,6 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.DatePickerDialog;
 import android.content.Intent;
-import android.graphics.Color;
-import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -16,7 +14,6 @@ import android.widget.Toast;
 
 import com.example.signozodiacal.model.User;
 
-import java.time.Month;
 import java.util.Calendar;
 
 public class MainActivity extends AppCompatActivity implements DatePickerDialog.OnDateSetListener {
@@ -24,7 +21,7 @@ public class MainActivity extends AppCompatActivity implements DatePickerDialog.
 
     private TextView edFirstName,edLastName1,edLastName2;
     private Button btnSend,btnBirthDay;
-    TextView tvBirthDay;
+    //TextView tvBirthDay;
     User usuario;
     int day,month,year;
 
@@ -36,7 +33,6 @@ public class MainActivity extends AppCompatActivity implements DatePickerDialog.
         edLastName1= findViewById(R.id.edLastName1);
         edLastName2= findViewById(R.id.edLastName2);
         btnSend= findViewById(R.id.btnSend);
-        tvBirthDay=findViewById(R.id.tvBirthDay);
         btnBirthDay=findViewById(R.id.btnBirthDay);
         btnSend.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -61,7 +57,7 @@ public class MainActivity extends AppCompatActivity implements DatePickerDialog.
                     bundle.putSerializable(getResources().getString(R.string.user),usuario);
                     bundle.putString(getResources().getString(R.string.greeting),getResources().getString(R.string.greeting_user));
 
-                    Intent intento = new Intent(MainActivity.this,MainActivity_Results.class);
+                    Intent intento = new Intent(MainActivity.this,MainActivity_user_info.class);
                     intento.putExtras(bundle);
                     startActivity(intento);
 
@@ -69,7 +65,7 @@ public class MainActivity extends AppCompatActivity implements DatePickerDialog.
                 }
                 else
                 {
-                    Log.d(getResources().getString(R.string.MainActivity),getResources().getString(R.string.date_error));
+                    //Log.d(getResources().getString(R.string.MainActivity),getResources().getString(R.string.date_error));
                     Toast.makeText(MainActivity.this,getResources().getString(R.string.incorrectData),Toast.LENGTH_SHORT).show();
                 }
 
@@ -98,8 +94,9 @@ public class MainActivity extends AppCompatActivity implements DatePickerDialog.
 
             }
             else{
-                usuario=new User(year,month,dayOfMonth);
-                btnBirthDay.setText(day+"/"+month+"/"+year);
+                month=month+1;
+                usuario=new User(dayOfMonth,month,year);
+                btnBirthDay.setText(dayOfMonth+"/"+month+"/"+year);
             }
 
 
@@ -127,19 +124,39 @@ public class MainActivity extends AppCompatActivity implements DatePickerDialog.
     }
 
     @Override
-    protected void onStart() {
-        super.onStart();
+    protected void onPause() {
+        super.onPause();
+        //pause music
+        //save data
+    }
+
+    @Override
+    protected void onRestart() {
+        super.onRestart();
+        //music start
+        //set fields again
     }
 
     @Override
     protected void onStop() {
         super.onStop();
+        //save data
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        //clear all
     }
 
     @Override
     protected void onResume() {
         super.onResume();
+        //resume
+    }
 
-
+    @Override
+    protected void onStart() {
+        super.onStart();
     }
 }
